@@ -9,12 +9,12 @@ var song;
 var reverb;
 
 function preload() {
-  song = loadSound('assets/select_32.mp3');
+  song = loadSound('https://res.cloudinary.com/de3c6e2g5/video/upload/v1503006980/select_32_dc0d02.mp3');
 }
 
 function setup()
 {
-  
+  //createCanvas(1200, 1200);
   createCanvas(windowWidth,windowHeight);
  // stroke(255, 32);
 

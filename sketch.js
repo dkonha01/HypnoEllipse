@@ -10,22 +10,20 @@ function preload() {
   song = loadSound('https://res.cloudinary.com/de3c6e2g5/video/upload/v1503006980/select_32_dc0d02.mp3');
 }
 
-function setup()
-{
+function setup() {
   createCanvas(windowWidth,windowHeight);
   analyzer = new p5.Amplitude();
 
   // Patch the input to an volume analyzer
   analyzer.setInput(song);
-
   reverb = new p5.Reverb();
   song.disconnect();
   reverb.process(song,3,7);// wish i could put this in draw()
   song.loop();
 }
 
-function draw()
-{
+function draw() {
+
   var volume = map(mouseX, 0, width, .1, 1);
   song.amp(volume);
 
@@ -36,7 +34,7 @@ function draw()
 
   for (var j=0; j<18; j++){
          var sum =+ vol;
-     }
+  }
 
   var vol_adj = (sum/17)*37777;
   stroke(vol_adj, 57);//possibly adjust in different range

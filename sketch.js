@@ -29,10 +29,6 @@ function setup()
   reverb.process(song,3,7);// wish i could put this in draw()
   song.loop();
 
-     analyzer = new p5.Amplitude();
-
-  // Patch the input to an volume analyzer
-  analyzer.setInput(song);
 }
 
 function draw()

@@ -14,16 +14,9 @@ function preload() {
 
 function setup()
 {
-  //createCanvas(1200, 1200);
+
   createCanvas(windowWidth,windowHeight);
- // stroke(255, 32);
 
-  analyzer = new p5.Amplitude();
-
-  // Patch the input to an volume analyzer
-  analyzer.setInput(song);
-
-  // stroke(255, 128);
   reverb = new p5.Reverb();
   song.disconnect();
   reverb.process(song,3,7);// wish i could put this in draw()

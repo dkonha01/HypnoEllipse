@@ -3,7 +3,7 @@ var as;
 var rs;
 var theta=0;
 
-var  analyzer;
+var analyzer;
 
 var song;
 var reverb;

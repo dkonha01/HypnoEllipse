@@ -9,7 +9,7 @@ var song;
 var reverb;
 
 function preload() {
-  song = loadSound('https://res.cloudinary.com/de3c6e2g5/video/upload/v1503006980/select_32_dc0d02.mp3');
+  song = loadSound('https://res.cloudinary.com/de3c6e2g5/video/upload/v1504497673/hypNo_qpbdwj.wav');
 }
 
 function setup()
@@ -39,10 +39,10 @@ function draw()
   for (var j=0; j<18; j++){
          var sum =+ vol;
   }
-  
+
   var vol_adj = (sum/17)*37777;
   stroke(vol_adj, 57);//adjust in different range
-  
+
   background(0,23);
   // background(0, mouseX-127);//
 
@@ -51,7 +51,7 @@ function draw()
   // rs = map(mouseY, 0,height, .373, 7.43);
 
   var x, y, sq, angle=0, radius=20;
-  
+
   for (var i=0; i<num; i++) {
         x = width/2 + sin(angle)*radius;
         y = height/2 + cos(angle)*radius;
@@ -61,7 +61,7 @@ function draw()
         radius += rs;
         angle += as;
   }
-  
+
   theta -= vol_adj/173;
   // theta -= .47;
 }

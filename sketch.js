@@ -66,6 +66,8 @@ function draw()
   // theta -= .47;
 }
 
+function mousePressed() { getAudioContext().resume() }
+
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }

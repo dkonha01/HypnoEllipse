@@ -30,8 +30,8 @@ function setup()
 
 function draw()
 {
-  //var volume = map(mouseX, 0, width, .1, 1);
-  var volume = map(mouseX, 0, width, .3, 1.7);
+  var volume = map(mouseX, 0, width, .1, 1);
+ 
   song.amp(volume);
 
   // Changing the rate alters the pitch
@@ -64,7 +64,8 @@ function draw()
         angle += as;
   }
 
-  theta -= vol_adj/173;
+  theta -= vol_adj/113;
+ // theta -= vol_adj/173;
   // theta -= .47;
 }
 

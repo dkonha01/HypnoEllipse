@@ -30,7 +30,8 @@ function setup()
 
 function draw()
 {
-  var volume = map(mouseX, 0, width, .1, 1);
+  //var volume = map(mouseX, 0, width, .1, 1);
+  var volume = map(mouseX, 0, width, .3, 1.7);
   song.amp(volume);
 
   // Changing the rate alters the pitch

@@ -43,7 +43,8 @@ function draw()
          var sum =+ vol;
   }
 
-  var vol_adj = (sum/17)*37777;
+  var vol_adj = (sum/17)*57777;
+ // var vol_adj = (sum/17)*37777;
   stroke(vol_adj, 57);//adjust in different range
 
   background(0,23);

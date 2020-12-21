@@ -36,14 +36,14 @@ function draw()
   song.amp(volume);
 
   // Changing the rate alters the pitch
-  var speed = map(mouseY, 0, height, 0.1, 3);
+  var speed = map(mouseY, 0, height, 0.01, 3);
   song.rate(speed);
   var vol = analyzer.getLevel();
   for (var j=0; j<18; j++){
          var sum =+ vol;
   }
 
-  var vol_adj = (sum/17)*57777;
+  var vol_adj = (sum/7)*57777;
  // var vol_adj = (sum/17)*37777;
   stroke(vol_adj, 57);//adjust in different range
 

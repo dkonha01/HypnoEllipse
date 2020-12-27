@@ -36,7 +36,7 @@ function draw()
   song.amp(volume);
 
   // Changing the rate alters the pitch
-  var speed = map(mouseY, 0, height, 0.1, 3);
+  var speed = map(mouseY, 0, height, 0.01, 5);
   song.rate(speed);
   var vol = analyzer.getLevel();
   for (var j=0; j<18; j++){
@@ -50,8 +50,8 @@ function draw()
   // background(0, mouseX-127);//
 
   as = map(mouseY, 0,width,   1.91, 1.13);
-  rs = map(mouseX, 0,height, .437, 1.13);
-  // rs = map(mouseY, 0,height, .373, 7.43);
+ // rs = map(mouseX, 0,height, .437, 1.13);
+  rs = map(mouseY, 0,height, .373, 7.43);
 
   var x, y, sq, angle=0, radius=20;
 
